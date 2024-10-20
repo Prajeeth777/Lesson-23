@@ -10,12 +10,13 @@
         <p id="p3"></p>
         <p id="p4"></p>
         <script>
-            var countries=['USA','Canada','Mexico','Portugal','Spain','Morocco'];
+            var countries=['USA','Canada','Mexico','Portugal','Spain'];
             document.getElementById("p1").innerHTML=countries;
             document.getElementById("p2").innerHTML=countries.join("#");
             countries.pop();
-            document.getElementById("p1").innerHTML=num;
-            document.getElementById("p2").innerHTML=num[1];
+            document.getElementById("p3").innerHTML=countries;
+            countries.push("Morocco");
+            document.getElementById("p4").innerHTML=countries;
         </script>
     </body>
 </html>
